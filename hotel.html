@@ -8,7 +8,31 @@
 <body>
 
 <h1>Hotelzimmer-Buchungssystem</h1>
+<form action="#" method="post">
+  <section>
+    <label>Zimmertyp:
+      <select name="zimmertyp[]" size="2" multiple>
+        <option value="singleroom">Einzelzimmer</option>
+        <option value="doubleroom">Doppelzimmer</option>
+        <option value="familiyappartement">Familienappartement</option>
+        <option value="suit">Suit</option>
+      </select>
+    </label>
+  </section>
 
+
+  <section>
+    <input type="checkbox" name="zusatzleistung[]" value="breakfast" id="ZS1">
+    <label for="ZS1">Frühstück</label>
+    <input type="checkbox" name="zusatzleistung[]" value="airporttransfer" id="ZS2">
+    <label for="ZS2">Flughafentransfer</label>
+    <input type="checkbox" name="zusatzleistung[]" value="spa" id="ZS3">
+    <label for="ZS3">Spabereich</label>
+  </section>
+  <section>
+    <button type="submit">Submit</button>
+  </section>
+</form>
 
 </body>
 </html>
